@@ -12,42 +12,58 @@
 <div class="container">
 
   <div class="row">
-<!-- Row 1 where user selects their character -->
+<!-- Player Selector -->
     <div class="col-xs-12">
       <div class="panel panel-default">
-          <h2 class="panel-title"><h2>IF YOU WIN, YOU MAY LIVE</h2></h2>
+          <h2 class="panel-title"><h2>Kick that ball!</h2></h2>
         </div>
             <div class="remainingPlayers">
-            <div class="player thumbnail" data-health="450" data-attack="50" data-name="Maradona">
-              <img class="img-responsive" alt="Responsive image" src=./assets/boromir.jpg>
-                <div class="caption">
-                  <p class="text-center stats">Maradona HP:450</p>
-                </div>
-            </div>
-            <div class="hero thumbnail" data-health="500" data-attack="100" data-name="Gandalf">
-              <img class="img-responsive" alt="Responsive image" src=./assets/pele.jpg>
-                <div class="caption">
-                  <p class="text-center stats">Pele HP: 800</p>
-                </div>
-            </div>
-            <div class="player thumbnail" data-health="600" data-attack="200" data-name="Casillas">
-              <img class="img-responsive" alt="Responsive image" src=./assets/casillas.jpg>
-                <div class="caption">
-                  <p class="text-center stats">Casillas HP: 110</p>
-                </div>
-            </div>
-            <div class="player thumbnail" data-health="700" data-attack="350" data-name="Zidane">
-              <img class="img-responsive" alt="Responsive image" src=./assets/zidane.jpg>
-                <div class="caption">
-                  <p class="text-center stats">Zidane HP: 750</p>
-                </div>
-            </div>
-          </div>
 
+            <div class="player thumbnail" player-health="800" player-attack="250" player-name="Maradona">
+              <img class="img-responsive" alt="Responsive image" src=./assets/images/maradona.jpg>
+                <div class="caption">
+                  <p class="text-center stats">Maradona HP:800</p>
+                </div>
+            </div>
+
+			<div class="player thumbnail" player-health="1000" player-attack="350" player-name="Pele">
+              <img class="img-responsive" alt="Responsive image" src=".assets/images/pele.jpg">
+                <div class="caption">
+                  <p class="text-center stats">Pele HP:1000</p>
+                </div>
+            </div>
+
+			<div class="player thumbnail" player-health="700" player-attack="150" player-name="Buffon">
+              <img class="img-responsive" alt="Responsive image" src=".assets/images/buffon.jpg">
+                <div class="caption">
+                  <p class="text-center stats">Buffon HP:700</p>
+                </div>
+            </div>
+			
+			<div class="player thumbnail" player-health="700" player-attack="150" player-name="Casillas">
+              <img class="img-responsive" alt="Responsive image" src=".assets/images/casillas.jpg">
+                <div class="caption">
+                  <p class="text-center stats">Casillas HP:700</p>
+                </div>
+            </div>
+
+            <div class="player thumbnail" player-health="500" player-attack="100" player-name="Zidane">
+              <img class="img-responsive" alt="Responsive image" src=".assets/images/zidane.jpg">
+                <div class="caption">
+                  <p class="text-center stats">Zidane HP:500</p>
+                </div>
+            </div>
+
+            <div class="player thumbnail" player-health="450" player-attack="50" player-name="Ronaldo">
+              <img class="img-responsive" alt="Responsive image" src=".assets/images/ronaldo.jpg">
+                <div class="caption">
+                  <p class="text-center stats">Ronaldo HP:450</p>
+                </div>
+            </div>
 <!-- Your player -->
   <div class="row">
     <div class="col-xs-12">
-      <h3>Your Character: </h3>
+      <h3>Your Player: </h3>
         <div class="yourPlayer"></div>
           <h3 class='health'></h3>
     </div>
@@ -60,11 +76,10 @@
     </div>
   </div>
 
-  <div class="row fight">
+  <div class="row match">
     <div class="col-xs-12">
       <h3>Your Moves</h3>
       <input class="btn btn-default" type="button" id="attack" value="Attack">
-      <!-- <input class="btn btn-default" type="button" id="special" value="more">-->
     </div>
   </div>
   <div class="row">
@@ -75,42 +90,43 @@
       </div>
     </div>
 
+<!--
 <div class = "legend"
 	player-health = '1000'
 	player-name = "Pele">
-		<img src = "pele.jpg">
+		<img src = ".assets/images/pele.jpg">
 </div>
 
 <div class = "legend"
 	player-health = '900'
 	player-name = "Maradona">
-		<img src = "maradona.jpg">
+		<img src = ".assets/images/maradona.jpg">
 </div>
 
 <div class = "goaly"
 	player-health = '800'
 	player-name = "Buffon">
-		<img src = "buffon.jpg">
+		<img src = ".assets/images/buffon.jpg">
 </div>
 
 <div class = "goaly"
 	player-health = '800'
 	player-name = "Casillas">
-		<img src = "casillas.jpg">
+		<img src = ".assets/images/casillas.jpg">
 </div>
 
 <div class = "champion"
 	player-health = '500'
 	player-name = "Zidane">
-		<img src = "zidane.jpg">
+		<img src = ".assets/images/zidane.jpg">
 </div>
 
 <div class = "champion"
 	player-health = '600'
 	player-name = "Ronaldo">
-		<img src = "ronaldo.jpg">
+		<img src = ".assets/images/ronaldo.jpg">
 </div>
-
-<script type="text/javascript" src="game.js"></script>
+-->
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 </html>
