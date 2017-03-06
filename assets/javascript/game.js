@@ -36,11 +36,11 @@ $(".player").on("click", function(){
     chosenPlayer = true;
     health = $(this).attr('player-health');
     attack = $(this).attr('player-attack');
-    // $(".stats").replaceWith(yourHero + " " + "HP: " + health)
+    
     $(this).appendTo(".yourPlayer");
     $(".remainingPlayers").appendTo(".yourOpponent");
   }
-  //Your second click selects your opponent
+  //Second click selects opponent
   else {
     opponentName = $(this).attr('player-name');
     chosenOpponent = true;
@@ -51,7 +51,7 @@ $(".player").on("click", function(){
     $(".opponentHealth").text(opponentName + " " + "HP: " + opponentHealth);
   }
 });
-//Attack button
+//Shoot button
 $("#attack").on("click", function(){
   $(".health").text(yourPlayer + " " + "HP: " + health);
   $(".opponentHealth").text(opponentName + " " + "HP: " + opponentHealth);
@@ -71,7 +71,7 @@ var isOpponentOut = opponentHealth <= 0;
   checkFinalScore();
 });
 
-//check to see if you face sauron, revive as gandalf the white or if you lose.
+
 function checkVictory(){
   var secretLevel = opponentHealth <=0 && score > 1 && secret === false
   if (secretLevel){
@@ -85,7 +85,6 @@ function checkVictory(){
   }
   else if(opponentHealth <= 0){
     $(opponent).fadeOut();
-    // $(".opponentHealth").toggle();
     score++;
     console.log(score);
     alert("You won this round, choose your next opponent");
